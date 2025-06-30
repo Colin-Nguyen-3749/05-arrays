@@ -35,17 +35,24 @@ document.getElementById("genre").addEventListener("change", function() {
   // Get the selected genre
   const selectedGenre = document.getElementById("genre").value;
 
-  // Add movies to the movieList based on the selected genre
+  // Create an empty array for the movie list
+  let movieList = [];
+
+  // Assign the correct movie titles to movieList based on the selected genre
   if (selectedGenre === "Comedy") {
-    console.log("You selected 'Comedy'");
+    // If Comedy is selected, use comedyMovies array
+    movieList = comedyMovies;
   } else if (selectedGenre === "Action") {
-    console.log("You selected 'Action'");
+    // If Action is selected, use actionMovies array
+    movieList = actionMovies;
   } else if (selectedGenre === "Drama") {
-    console.log("You selected 'Drama'");
+    // If Drama is selected, use dramaMovies array
+    movieList = dramaMovies;
   } else if (selectedGenre === "Sci-Fi") {
-    console.log("You selected 'Sci-Fi'");
+    // If Sci-Fi is selected, use sciFiMovies array
+    movieList = sciFiMovies;
   }
 
   // Display the list of movies on the page
-  document.getElementById("movieRecommendations").innerText = `Enjoy: !`;
+  document.getElementById("movieRecommendations").innerText = `Enjoy: ${movieList.join(", ")}!`;
 });
