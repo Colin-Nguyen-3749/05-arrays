@@ -1,3 +1,35 @@
+// Comedy movies array
+const comedyMovies = [
+  "The Mask",
+  "Dumb and Dumber",
+  "Superbad",
+  "Home Alone"
+];
+
+// Action movies array
+const actionMovies = [
+  "Die Hard",
+  "Mad Max: Fury Road",
+  "John Wick",
+  "The Avengers"
+];
+
+// Drama movies array
+const dramaMovies = [
+  "Forrest Gump",
+  "The Shawshank Redemption",
+  "The Godfather",
+  "A Beautiful Mind"
+];
+
+// Sci-Fi movies array
+const sciFiMovies = [
+  "Inception",
+  "The Matrix",
+  "Interstellar",
+  "Star Wars"
+];
+
 // Set up event listener for when the user selects a genre
 document.getElementById("genre").addEventListener("change", function() {
   // Get the selected genre
